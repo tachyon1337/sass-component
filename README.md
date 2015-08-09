@@ -1,3 +1,3 @@
-SASS Utility Functions
+SASS Component
 ===========================
 
