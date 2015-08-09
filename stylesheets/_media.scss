@@ -1,0 +1,8 @@
+
+$breakpoint-touch:1024px !default;
+$breakpoint-desktop: $breakpoint-touch + 1 !default;
+
+
+$media-touch: "only screen and (max-width: #{$breakpoint-touch}) and (min-width:220px})" !default;
+$media-desktop: "only screen and (min-width: #{$breakpoint-desktop})" !default;
+

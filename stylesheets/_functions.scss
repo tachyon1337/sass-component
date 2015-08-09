@@ -1,0 +1,48 @@
+
+/// returns a color from a list or value
+/// @access public
+/// @param {*} $value
+/// @returns {Color}
+@function color-get($value){
+  @if(type-of($value)==list){
+    @return last($value);
+  }@else{
+    @return $value;
+  }
+}
+
+/// darkens a list by a factor
+/// @access public
+/// @param {List} $color-list
+/// @param {Number} $factor
+/// @return {List}
+@function darken-rule($color-list, $factor) {
+  $rule: '';
+  @each $val in $color-list {
+    @if ($val != transparent) {
+      $rule: $rule + ' ' + darken($val,$factor);
+    }
+  }
+  @return unquote($rule);
+}
+
+
+/// darken a gradient list by a % factor
+/// @access public
+/// @param {List} $list
+/// @param {Number} $factor
+/// @return {List}
+@function darken-gradient($list,$factor){
+  $darken-list:();
+  @each $val in $list{
+    @if type-of($val)==list{
+      $darken-val:darken-rule($val,$factor);
+      $darken-list:append($darken-list,$darken-val,comma);
+    }@else{
+      $_val:darken($val, $factor);
+      $darken-list:append($darken-list,$_val,comma);
+    }
+  }
+
+  @return $darken-list;
+}
