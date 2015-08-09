@@ -1,0 +1,16 @@
+$grey: #ccc;
+$off-white: #eee;
+$component-hover-darken-factor: 4%;
+$component-border-hover-darken-factor: 4%;
+$component-box-shadow: rgba(0, 0, 0, .20) 0px 1px 1px;
+$component-box-shadow-active: inset 0 3px 5px rgba(0, 0, 0, .175);
+$component-border: 1px solid;
+$component-background-disabled: $off-white;
+$component-font-color-disabled: darken($off-white, 5%);
+$component-border-disabled: 1px solid transparent !important;
+$include-component-gradient: true;
+$enforce-border-important : false;
+$override-component-box-shadow: true;
+$include-component-box-shadow: false;
+$include-component-active-box-shadow: true;
+$include-component-text-shadow: false;
