@@ -195,7 +195,7 @@ $_component-map:null;
 /// @param {String} $component - component name reference
 /// @param {Map} $map - component map
 @mixin touch-component($component: null,$map:()) {
-  @media #{$media-desktop}{
+  @media #{$media-touch}{
     @include component($component,$map);
   }
 }
