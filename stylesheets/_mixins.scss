@@ -225,7 +225,6 @@ $include-component-text-shadow: false !default;
 @mixin component-font($color: null, $text-shadow: null) {
   @if type-of($color) == color {
     color: $color;
-    //opacity: 1;
   } @else if type-of($color) == number {
     opacity: $color;
   }

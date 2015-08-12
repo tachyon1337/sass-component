@@ -9,7 +9,8 @@
     "url": "https://github.com/tachyon1337/sass-component.git"
   },
   "dependencies": {
-    "sass-functions": "git+https://github.com/tachyon1337/sass-functions.git"
+    "sass-functions": "git+https://github.com/tachyon1337/sass-functions.git",
+    "sass-media-query": "git+https://github.com/tachyon1337/sass-media-query.git"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
